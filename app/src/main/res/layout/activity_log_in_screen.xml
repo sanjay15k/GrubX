@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="nsit.com.canteenapp.LogInScreen">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/loginScreenParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="85dp"
+            android:letterSpacing="0.05"
+            android:text="@string/login_heading1"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/login_heading2"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/usernameImageView"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/username_logo_desc"
+            android:paddingTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/usernameImageView"
+            app:layout_constraintTop_toTopOf="@+id/usernameImageView">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_editText"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/passwordImageView"
+            android:layout_width="46dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/password_logo_desc"
+            android:paddingTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/usernameImageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/usernameImageView"
+            app:layout_constraintTop_toBottomOf="@+id/usernameImageView" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/passwordImageView"
+            app:layout_constraintTop_toTopOf="@+id/passwordImageView">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_editText"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/rememberMeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="@string/checkbox_remember_me"
+            app:layout_constraintStart_toStartOf="@+id/passwordImageView"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+        <TextView
+            android:id="@+id/forgotPassMessageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="32dp"
+            android:text="Forgot Password?"
+            app:layout_constraintEnd_toStartOf="@+id/forgotPasswordTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rememberMeCheckBox" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="79dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:text="Click Here"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/forgotPassMessageTextView"
+            app:layout_constraintTop_toBottomOf="@+id/rememberMeCheckBox" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="42dp"
+            android:backgroundTint="#ff0000"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPassMessageTextView" />
+
+        <LinearLayout
+            android:id="@+id/shortSignUpLinkLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+            app:layout_constraintStart_toStartOf="@+id/loginBtn"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn">
+
+            <TextView
+                android:id="@+id/alreadyHaveAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:text="@string/dont_have_account"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/sign_up"
+                android:textAlignment="textStart"
+                android:textColor="#0000ff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

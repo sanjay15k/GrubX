@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/offerParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/cardBorderOffers"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="#FF6D00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/cardBorderOffers"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/offers_default_background_image">
+
+                    <ImageView
+                        android:id="@+id/offerBackgroundImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/offers_background_layer" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/offerTitle1TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="44dp"
+                    android:text="Get 25% on every order"
+                    android:textColor="#fff"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/offerTitle2TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:text="Exclusively on Mc Cain"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="5dp"
+                    android:text="Hurry Up Before offer ends"
+                    android:textColor="#fff"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

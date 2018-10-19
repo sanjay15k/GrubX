@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favouritesFrameLayout"
+    android:layout_width="250dp"
+    android:layout_height="210dp"
+    android:paddingTop="10dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f781">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/favourite_trash_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/favouriteItemImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:background="#E0E0E0"
+                android:orientation="horizontal">
+
+                <!--This Linear layout is to load food item Image-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:background="#fff">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/itemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/itemPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 40/-"
+                        android:textSize="14sp"
+                        android:textColor="#ff0000"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/addToCartFavouriteItem"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:backgroundTint="#66BB6A"
+                            android:background="@drawable/favourite_item_add_to_cart_icon"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

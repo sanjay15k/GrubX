@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingStart="10dp">
+
+        <ImageView
+            android:id="@+id/userProfileImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/userFullNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/userProfileImageView"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="Sanjay Kumar"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile Photo"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/userProfileImageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/user_account_profile_image_icon"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile photo"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Information"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/user_account_image_icon"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#000"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/accountUsernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/user_account_email_icon"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/accountEmailIDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/user_account_phone_icon"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/accountPhoneNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Password"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/changePasswordView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/user_account_password_icon"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#000"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change password"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/user_account_next_icon"
+            android:layout_gravity="end|center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Orders"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/checkRecentOrdersView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/user_account_recent_orders_icon"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#000"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent orders"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/user_account_next_icon"
+            android:layout_gravity="end|center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkPastOrdersView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/user_account_past_orders_icon"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#000"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past Orders"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/user_account_next_icon"
+            android:layout_gravity="end|center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/logoutView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/user_account_logout_icon"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#000"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/user_account_next_icon"
+            android:layout_gravity="end|center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:layout_below="@id/appBarLayout"
+        android:id="@+id/bottomNavigation"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        android:background="#fff"/>
+
+</android.support.design.widget.CoordinatorLayout>

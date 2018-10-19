@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/canteens"
+        android:title="Canteen"
+        android:icon="@drawable/canteen_bottom_nav_icon"
+        app:showAsAction="always"
+        android:iconTint="#fff"/>
+
+    <item
+        android:id="@+id/offers"
+        android:title="Offers"
+        android:icon="@drawable/offers_bottom_nav_icon"
+        app:showAsAction="always"
+        android:iconTint="#fff"/>
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_bottom_nav_icon"
+        app:showAsAction="always"
+        android:iconTint="#fff"/>
+
+    <item
+        android:id="@+id/favourites"
+        android:title="Favourites"
+        android:icon="@drawable/favourites_bottom_nav_icon"
+        app:showAsAction="always"
+        android:iconTint="#fff"/>
+
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/about_bottom_nav_icon"
+        app:showAsAction="always"
+        android:iconTint="#fff"/>
+
+</menu>

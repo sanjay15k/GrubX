@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nsit.com.canteenapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/app_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroScreens.IntroScreen"
+            android:noHistory="true"
+            android:theme="@style/customNoActionBarTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|orientation"
+            android:label=""
+            android:theme="@style/CustomMainActivityTheme" />
+        <activity
+            android:name=".LogInScreen"
+            android:theme="@style/customNoActionBarThemeWithStatusBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".SignUpScreen"
+            android:theme="@style/customNoActionBarTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyCart"
+            android:label="Cart"
+            android:screenOrientation="portrait"
+            android:theme="@style/customNoActionBarThemeWithStatusBar" />
+        <activity
+            android:name=".CategoryItemsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/CanteensCategoryTheme" />
+        <activity android:name=".OurTeam" />
+        <activity
+            android:name=".MyRecentOrders"
+            android:label="Recent Orders"
+            android:theme="@style/MyOrdersTheme" />
+        <activity
+            android:name=".MyPastOrders"
+            android:label="Past Orders"
+            android:theme="@style/MyOrdersTheme" />
+        <activity
+            android:name=".SmsOTPVerification"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".OtherApps"
+            android:theme="@style/MoreAppsTheme" />
+        <activity
+            android:name=".NewPassword"
+            android:label="Change Password"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".McCainCanteenItemsCategory"
+            android:label="Mc Cain Categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/CanteensCategoryTheme"/>
+        <activity
+            android:name=".MiniZaycaCanteenItemsCategory"
+            android:label="Mini Zayca Categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/CanteensCategoryTheme"/>
+        <activity
+            android:name=".JustCafeCanteenItemsCategory"
+            android:label="Just Cafe Categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/CanteensCategoryTheme"/>
+        <activity
+            android:name=".AmulCanteenItemsCategory"
+            android:label="Amul Categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/CanteensCategoryTheme"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/canteensToolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFA726"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/canteensToolbar">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mcCainCanteenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_margin="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#66000000"
+                        android:backgroundTintMode="src_over" />
+
+                    <TextView
+                        android:id="@+id/mcCainCanteenTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="68dp"
+                        android:letterSpacing="0.05"
+                        android:text="MC CAIN"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/mcCainCanteenTextView"
+                        android:text="Snacks or full course meals, McCain has the answer to all your cravings."
+                        android:textAlignment="center"
+                        android:textColor="#E0E0E0"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/miniZaycaCanteenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:layout_marginBottom="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#66000000"
+                        android:backgroundTintMode="src_over" />
+
+                    <TextView
+                        android:id="@+id/miniZaycaCanteenTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="68dp"
+                        android:letterSpacing="0.05"
+                        android:text="MINI ZAYCA"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/miniZaycaCanteenTextView"
+                        android:text="Facing the nescii lawns, Mini Zayca is the go-to place for most outsiders."
+                        android:textAlignment="center"
+                        android:textColor="#E0E0E0"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/justCafeCanteenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:layout_marginBottom="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#66000000"
+                        android:backgroundTintMode="src_over" />
+
+                    <TextView
+                        android:id="@+id/justCafeCanteenTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="68dp"
+                        android:letterSpacing="0.05"
+                        android:text="JUST CAFE"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/justCafeCanteenTextView"
+                        android:text="The diverse menu of JC makes it an easy choice for many"
+                        android:textAlignment="center"
+                        android:textColor="#E0E0E0"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/amulCanteenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:layout_marginBottom="?attr/actionBarSize">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#66000000"
+                        android:backgroundTintMode="src_over" />
+
+                    <TextView
+                        android:id="@+id/amulCanteenTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="68dp"
+                        android:letterSpacing="0.05"
+                        android:text="AMUL"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/amulCanteenTextView"
+                        android:text="With shakes, sweets and dairy products, Amul sweetens life at NSUT."
+                        android:textAlignment="center"
+                        android:textColor="#E0E0E0"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

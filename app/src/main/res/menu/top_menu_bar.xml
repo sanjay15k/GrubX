@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cart"
+        android:title="Cart"
+        android:icon="@drawable/cart_top_bar_icon"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/rateUs"
+        android:title="Rate Us"
+        android:orderInCategory="200"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/team"
+        android:title="Our Team"
+        android:orderInCategory="250"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/otherApps"
+        android:title="Other Apps"
+        android:orderInCategory="300"
+        app:showAsAction="never"/>
+
+</menu>

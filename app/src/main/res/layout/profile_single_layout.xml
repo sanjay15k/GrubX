@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#fff"
+    app:cardElevation="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/memeberNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sanjay Kumar"
+                android:textSize="23sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:letterSpacing="0.05"/>
+
+            <TextView
+                android:id="@+id/memberPositionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Developer"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/facebookProfileImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:tint="#757575"
+                        android:src="@drawable/facebook_social_profile_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="facebook"
+                        android:textSize="15sp"
+                        android:textColor="#757575"
+                        android:gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/emailProfileImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:tint="#757575"
+                        android:src="@drawable/email_social_profile_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="email"
+                        android:textSize="15sp"
+                        android:textColor="#757575"
+                        android:gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/whatsappProfileImageView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:tint="#757575"
+                        android:src="@drawable/whatsapp_social_profile_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="whatsapp"
+                        android:textSize="15sp"
+                        android:textColor="#757575"
+                        android:gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

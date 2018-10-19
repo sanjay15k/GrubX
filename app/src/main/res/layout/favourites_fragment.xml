@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/favouritesCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favouriteFragmentParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0E0E0">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/favouritesToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff0000"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Swipe towards left to remove item from list."
+        android:textColor="#000"
+        android:layout_below="@id/favouritesToolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView3">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipeRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/emptyFavList"
+        android:layout_width="91dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

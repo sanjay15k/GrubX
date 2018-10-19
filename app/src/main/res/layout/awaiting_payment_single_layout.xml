@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/awaitingPaymentCardView"
+    android:layout_width="200dp"
+    android:layout_height="270dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rootLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/canteenImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mini_zayca_canteens_background" />
+
+                <TextView
+                    android:id="@+id/canteenNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/canteenImageView"
+                    android:letterSpacing="0.05"
+                    android:text="Mini Zayca"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:text="ITEMS"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="1 x French Fries\n2 x Chilly Potatoe\n1 x French Fries"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:text="DELIVERY TIME"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemDeliveryTimeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="6:35 PM"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:text="TOTAL AMOUNT"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/home_featured_rupee_icon" />
+
+                    <TextView
+                        android:id="@+id/itemdTotalTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="80"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/onAwaitingPaymentItemRemoveBtn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/round_button_with_border_rect"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v7.widget.CardView>

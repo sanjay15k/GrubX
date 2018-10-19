@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#182D41">
+
+            <TextView
+                android:id="@+id/headingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#BDBDBD"
+                android:textSize="21sp"
+                android:padding="15dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/verification_imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="103dp"
+            android:src="@drawable/mobile_verification_layout_icon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verification_imageView1"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:text="We have sent you an OTP via SMS on +91-"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/verification_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Enter OTP here"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/otpEnteredEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/verification_textview2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/mobile_verification_edittext_border"
+            android:ems="5"
+            android:inputType="number"
+            android:maxLength="5"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#ff0000" />
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/OTPMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS may take a couple of minutes to deliver. Please wait"
+            android:textColor="#757575"
+            android:layout_below="@id/otpEnteredEditText"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/resendOTPTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't Recieve otp? RESEND"
+            android:textColor="#757575"
+            android:layout_below="@id/OTPMessage"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/submitOTPImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/resendOTPTextView"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mobile_verification_round_button"
+            android:padding="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mobile_verification_next_arrow_icon" />
+
+    </RelativeLayout>
+
+</ScrollView>

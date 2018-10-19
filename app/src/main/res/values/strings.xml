@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">GrubX</string>
+    <string name="introScreenDesc1">Avoid huge crowds. Place orders anytime, anywhere and enjoy fresh meals every single time, without having to wait.</string>
+    <string name="introScreenDesc2">Enjoy interesting combos of your favourite and the most popular lip smacking choices.</string>
+    <string name="introScreenDesc3">Share your experience and suggestions and enjoy better quality food in a more hygienic eating ambiance.</string>
+    <string name="introScreenDesc4">Get your favourite dishes in your favourite canteen by placing your recommendations.</string>
+    <string name="introScreenDesc5">Get upto 10% off on your orders by ordering through GrubX.</string>
+    <string name="login_heading1">Let\'s go in</string>
+    <string name="login_heading2">Enter your username and password</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="login_with_fb">Login with facebook</string>
+    <string name="login">Login</string>
+    <string name="checkbox_remember_me">Remember Me</string>
+    <string name="password_editText">Password</string>
+    <string name="username_editText">Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password_logo_desc">PassLogo</string>
+    <string name="username_logo_desc">usernameLogo</string>
+    <string name="sign_up_heading2">Just few steps away</string>
+    <string name="already_have_acc">Alread have account?</string>
+    <string name="fullName_editText">Full Name</string>
+    <string name="mobile_number_editText">Mobile Number</string>
+    <string name="mobile_no_logo_desc">Mobile logo</string>
+    <string name="email_editText">Email ID</string>
+    <string name="email_logo_desc">Email Logo</string>
+    <string name="continue_with_fb">Continue with facebook</string>
+    <string name="my_recent_orders_awaiting_conf">\u2022 Awaiting Confirmation</string>
+    <string name="my_recent_orders_awaiting_payment">• Awaiting Payment</string>
+    <string name="my_recent_orders_in_process">• In Ready Process</string>
+    <string name="my_recent_orders_cancelled_orders">• Cancelled Orders</string>
+    <string name="nsit_app_desc">NSIT App is all in one app for NSIT student.The app solves the terrible UI of NSIT IMS on mobile and also keeps you up-to-date with attendance, timetable, course registered in the ongoing semester, notices and many more.</string>
+
+</resources>

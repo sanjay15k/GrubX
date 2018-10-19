@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            android:shape="rectangle">
+            <!-- Set the border color of your layout here -->
+            <solid android:color="#F57F17"/>
+
+        </shape>
+    </item>
+
+    <!-- This is for border left but
+    you can change this according to your need -->
+    <item android:left="2dp" >
+        <shape
+            android:shape="rectangle">
+            <!-- Set the background color of your layout here -->
+            <solid android:color="#fff" />
+        </shape>
+    </item>
+
+</layer-list>
